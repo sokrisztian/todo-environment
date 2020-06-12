@@ -32,7 +32,7 @@ CREATE TABLE `todos` (
   PRIMARY KEY (`id`),
   KEY `todos_user_id_FOREIGN` (`user_id`),
   CONSTRAINT `todos_user_id_FOREIGN` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41,7 +41,7 @@ CREATE TABLE `todos` (
 
 LOCK TABLES `todos` WRITE;
 /*!40000 ALTER TABLE `todos` DISABLE KEYS */;
-INSERT INTO `todos` VALUES (1,1,'Organize interview with Stephany','2020-06-13 10:00:00'),(2,2,'Attend department meeting',NULL),(3,1,'Do half an hour of exercise','2020-06-12 11:00:00'),(4,1,'Buy some vegetables',NULL),(5,2,'Call Mike',NULL),(33,8,'Read a poem.','2020-06-17 19:00:00'),(34,9,'Go for a big walk',NULL),(35,9,'Cycling',NULL);
+INSERT INTO `todos` VALUES (1,1,'Organize interview with Stephany','2020-06-13 10:00:00'),(2,2,'Attend department meeting','2020-06-13 11:14:00'),(3,1,'Do half an hour of exercise','2020-06-12 11:00:00'),(4,1,'Buy some vegetables',NULL),(5,2,'Call Mike',NULL),(33,8,'Read a poem.','2020-06-17 19:00:00'),(34,9,'Go for a big walk',NULL),(35,9,'Cycling','2020-06-13 11:14:00'),(40,8,'What will be your next interesting TODO?',NULL),(41,9,'Climbing','2020-06-13 11:14:00');
 /*!40000 ALTER TABLE `todos` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -54,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-06-12  2:56:31
+-- Dump completed on 2020-06-12 12:23:49
